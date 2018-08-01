@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+
+ 
+
+
+<script>
+        function calculate(){
+        var selection = document.getElementsByName("packageOptions")[0].value;
+        
+        var one = parseFloat(document.getElementById("basic").value);
+        var two = parseFloat(document.getElementById("gold").value);
+        var three = parseFloat(document.getElementById("baller").value);
+        var four = parseFloat(document.getElementById("danceOne").value);
+        var five = parseFloat(document.getElementById("danceTwo").value);
+        var result = 0;
+        
+        switch(selection) {
+            case "first":
+                result = one + four;        
+                break;
+            case "second":
+                result = two + four;        
+                break;
+            case "third":
+                result = three + four;        
+                break;
+                case "four":
+                result= one + five;
+                break;
+                case "five":
+                result = two + five;        
+                break;
+            case "six":
+                result = three + five;        
+                break;
+            case "seven":
+                result = two;        
+                break;
+                case "eight":
+                result= three ;
+            default:
+                result = one;      
+        }
+        document.getElementById("packageResult").value = result;
+        }
+        document.getElementsByName("packageOptions")[0].onchange=calculate;
+        
+        </script>
+        <script>
+        onChange = (e) =>
+       this.value = e.target.value; 
+       calculate();
+       </script>
+       <script>
+       onSubmit = (e) =>
+       e.preventDefault();
+       calculate();
+    //    axios.post('/subscriptions', ((req, res)=>{
+    //        if(err){
+    //            res.status(500).send(err)
+    //            res.send(req.body);
+    //        }
+           </script>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Swagbox Subscription Sign up</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/signup/signup.css">
+<script src="js/signup/signup.js"></script>
+</head>
+
+<body>
+    <!-- ****** Header Area Start ****** -->
+    <header class="header_area">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Area Start -->
+                <div class="col-12">
+                    <div class="logo_area text-center">
+                        <a href="index.html" class="yummy-logo">SwagBox</a>
+                    </div>
+                </div>
+            </div>
+
+
+    </header>
+    <div class="columns" id="num1">
+        <ul class="price">
+            <li class="header">Basic</li>
+            <li class="grey">$ 75 / month</li>
+            <li>Personal Stylist</li>
+            <li>2 - 3 items</li>
+            <li>No Shoes/Accessories</li>
+            <li>Exchanges Allowed</li>
+            <br/>
+        </ul>
+    </div>
+    <div class="columns" id="num2">
+        <ul class="price">
+            <li class="header">Gold Package</li>
+            <li class="grey">$ 150 / month</li>
+            <li>Personal Stylist</li>
+            <li>3 - 5 items</li>
+            <li>Surprise Shoes/Accessories</li>
+            <li>Exchanges Allowed</li>
+            <br/>
+        </ul>
+    </div>
+    <div id="set-of-four">
+        <div class="columns" id="num3">
+            <ul class="price">
+                <li class="header">Baller Package</li>
+                <li class="grey">$ 250 / month</li>
+                <li>Personal Stylist</li>
+                <li>4 - 6 items</li>
+                <li>Semi-annual Shoes</li>
+                <li>Exchanges Allowed</li>
+                <br/>
+            </ul>
+        </div>
+
+        <div class="columns" id="num4">
+            <ul class="price">
+                <li class="header">Bonus Dance Package</li>
+                <li class="grey">$ 150 /$300 yearly </li>
+                <li>Personal Stylist</li>
+                <li>$150 - Homecoming OR Prom</li>
+                <li>$300- includes HomesComing AND Prom</li>
+                <li>**Complete Tux w/Shoes</li>
+                <br/>
+            </ul>
+        </div>
+
+        <div class="signup-wrapper">
+            <div class="signup-form-area">
+                <h2 id="signup-title">Create Your Account</h2>
+                <p id="adult">
+                    <strong>Please note </strong>you
+                    <strong>MUST</strong> either be 16,
+                    <strong> AND</strong> the cardholder to subscribe,
+                    <strong>OR</strong> you have to ask your parents to subscribe for you.</p>
+
+                <p id="who-question">Who is this Subscription for?</p>
+                <label>Full Name of Receipient</label>
+                <input class="label-input" type="text" name="fullname" id="fullname" class="sub-input" require>
+                <label>Age of Receipient</label>
+                <input class="label-input" type "number" id="sub-age" class="sub-input">
+                <h3 id="sub-plan">Select your monthly package:</h3>
+
+                <form id="signup-form"  onsubmit="onSubmit()" name="signup">
+                    <select name="packageOptions"required>
+                        <option id="basic"value="75" onchange="calculate()">Basic Plan @ $75/a month</option>
+                        <option id="gold" value="150" onchange="calculate()">Gold Plan @ $150/a month</option>
+                        <option id="baller" value="250" onchange="calculate()">Baller Plan @ 250/a month</option>
+                    </select>
+                    <p id="dance-question">Would you like to include one of the bonus dance package?</p>
+                    <select name="packageOptions"required>
+                        <option id="danceOne" value="150" onchange="calculate()">Yes, sign me up for one dance @ an additional $150</option>
+                        <option id="danceTwo"value="300" onchange="calculate()">Yes, sign me up for two dances @ an additional $300</option>
+                        <option id="none"value="0">No, thanks</option>
+                    </select>
+                    <p id="packageResult" value=${result}></p>
+                    <p id="sub-personal-info">Billing Information</p>
+
+                    <label>Full Name of Cardholder </label>
+                    <input type="text" id="payment-name" class="sub-input" require>
+                    <label>Street Address</label>
+                    <input type="text" id="street-address" class="sub-input" require>
+                    <label>City</label>
+                    <input type="text" id="city" class="sub-input" require>
+                    <label>State</label>
+                    <input type="text" id="state" class="sub-input" require>
+                    <label>ZipCode</label>
+                    <input type="number" id="zipcode" class="sub-input" require>
+                    <label>Phone Number</label>
+                    <input type="phone" id="phone-number" class="sub-input" require>
+                    <label>Email</label>
+                    <input type="email" name="sub-email" id="sub-email" class="sub-input" require>
+                    <label>Card Number</label>
+                    <input type="number" id="credit-card-num" class="sub-input" require>
+                    <label>Expiration Date(mm/yy)</label>
+                    <input type="number" id="exp-date" class="sub-input" require>
+                    <label>Three Digit Code</label>
+                    <input type="number" id="secret-code" class="sub-input" require>
+                    <br>
+                    <p id="shipping-question">Is the billing address the same as the shipping address?</p>
+                    <select>
+                        <option value="same-address">Yes</option>
+                        <option value="not-the-same">No</option>
+                    </select>
+                    <p id="shipping-info-title">Shipping Information</p>
+                    <label>Street Address</label>
+                    <input type="text" id="shipping-street-address" class="sub-input">
+                    <label>City</label>
+                    <input type="text" id="shipping-city" class="sub-input">
+                    <label>State</label>
+                    <input type="text" id="shipping-state" class="sub-input">
+                    <label>ZipCode</label>
+                    <input type="number" id="shipping-zipcode" class="sub-input">
+                    <p id="terms">By clicking subscribe you agreed with Swagbox's membership
+                        <a href="#"> terms and conditions.</a>
+                    </p>
+                    <a href="styles.html">
+                        <button id="sub-btn">Subscribe Now</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Jquery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap-4 js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins JS -->
+    <script src="js/others/plugins.js"></script>
+    <!-- Active JS -->
+    <script src="js/active.js"></script>
+
+</body>
+
+</html>

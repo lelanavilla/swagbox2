@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Swagbox-A Subscription Clothing Box & Personal Stylist for Young Men</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive/responsive.css" rel="stylesheet">
+    <script>
+        function validate(text1, text2) {
+
+            if (text1 == text2) {
+                window.alert(
+                    "Some cares about your swag, Timothy! You have been gifted a YEAR subscription to SwagBox's GOLD PACKAGE + the complete DANCE PACKAGE! Please complete your Style Profile, so your Personal Stylist can begin creating your first Swagbox!"
+                );
+            }
+            if (text1 !== text2) {
+                window.alert("Sorry, The Code you entered is invalid. Please check and try again!");
+            }
+        }
+
+        onSubmit = (e) =>
+            e.preventDefault();
+        validate(text1.value, "TDC12072001");
+    </script>
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="yummy-load"></div>
+    </div>
+    <!-- ****** Top Header Area Start ****** -->
+    <div class="top_header_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-5 col-sm-6">
+                    <!--  Top Social bar start -->
+                    <span> </span>
+
+                    <form data-netlify="true" method="POST" onsubmit=validate() name="giftcode" id="gift-form">
+                        <p>Gift Code Redemption</p>
+                        <input type="text" name="text1" id="g-code" />
+                        <button value "Redeem" name="submit" id="gift-btn" onclick=javascript:validate()>Redeem</button>
+                    </form>
+                    <!-- <div class="top_social_bar">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                    </div> -->
+                </div>
+    <!-- ****** Top Header Area End ****** -->
+
+    <!-- ****** Header Area Start ****** -->
+    <header class="header_area">
+        <div class="container">
+            <div class="row">
+                <!-- Logo Area Start -->
+                <div class="col-12">
+                    <div class="logo_area text-center">
+                        <a href="index.html" class="yummy-logo">SwagBox</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#yummyfood-nav" aria-controls="yummyfood-nav"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars" aria-hidden="true"></i> Menu</button>
+                        <!-- Menu Area Start -->
+                        <div class="collapse navbar-collapse justify-content-center" id="yummyfood-nav">
+                            <ul class="navbar-nav" id="yummy-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="yummyDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Pages</a>
+                                    <div class="dropdown-menu" aria-labelledby="yummyDropdown">
+                                        <a class="dropdown-item" href="index.html">Home</a>
+
+
+                                        <a class="dropdown-item" href="styles.html">Style Profile</a>
+                                        <a class="dropdown-item" href="signup.html">Sign Up</a>
+
+                                        <a class="dropdown-item" href="contact.html">Contact</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="prices.html">Prices</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="styles.html">Style Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="signup.html">Sign Up</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ****** Header Area End ****** -->
+
+    <!-- ****** Welcome Post Area Start ****** -->
+    <section class="welcome-post-sliders owl-carousel">
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide-1.png" alt="slide1">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <!-- <div class="post-date-commnents d-flex">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div> -->
+
+                <h5>Trendy</h5>
+
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide2.png" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <!-- <div class="post-date-commnents d-flex">
+                    <a href="#">May 19, 2017</a>
+                    <a href="#">5 Comment</a>
+                </div> -->
+
+                <h5>Classic</h5>
+
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide3.png" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <!-- <div class="post-date-commnents d-flex">
+                    <a href="#">May 19, 2017</a>
+                    <a href="#">5 Comment</a>
+                </div> -->
+
+                <h5>Athletic</h5>
+
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide6.png" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <!-- <div class="post-date-commnents d-flex">
+                    <a href="#">May 19, 2017</a>
+                    <a href="#">5 Comment</a>
+                </div> -->
+
+                <h5>Stylish</h5>
+
+            </div>
+        </div>
+
+        <!-- Single Slide -->
+        <div class="welcome-single-slide">
+            <!-- Post Thumb -->
+            <img src="img/bg-img/slide5.png" alt="">
+            <!-- Overlay Text -->
+            <div class="project_title">
+                <!-- <div class="post-date-commnents d-flex">
+                    <a href="#">May 19, 2017</a>
+                    <a href="#">5 Comment</a>
+                </div> -->
+                <h5>Alternative</h5>
+            </div>
+        </div>
+
+    </section>
+    <!-- ****** Welcome Area End ****** -->
+
+    <!-- ****** Categories Area Start ****** -->
+    <section class="categories_area clearfix" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single_catagory wow fadeInUp" data-wow-delay=".3s">
+                        <img src="img/catagory-img/five.jpg" alt="">
+                        <div class="catagory-title" style="background-color:red">
+                            <a href="signup.html">
+                                <h5>Style Profile</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single_catagory wow fadeInUp" data-wow-delay=".6s">
+                        <img src="img/catagory-img/two.jpg" alt="">
+
+                        <div class="catagory-title" style="background-color:teal">
+                            <a href="prices.html">
+                                <h5>Prices</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single_catagory wow fadeInUp" data-wow-delay=".9s">
+                        <img src="img/catagory-img/three.jpg" alt="">
+                        <div class="catagory-title" style="background-color:gray">
+                            <a href="contact.html">
+                                <h5>Contact Us</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ****** Categories Area End ****** -->
+
+    <!-- ****** Area Start ****** -->
+    <section class="blog_area section_padding_0_80">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <!-- ****** Sidebar ****** -->
+                        <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                            <div class="blog-sidebar mt-5 mt-lg-0">
+                                <!-- Single Widget Area -->
+                                <div class="single-widget-area about-me-widget text-center">
+                                    <div id="howitworks-wrapper">
+                                        <div class="widget-title">
+                                            <h6>How it works</h6>
+                                            <h3> STEP ONE: CREATE YOUR STYLE PROFILE</h3>
+                                            <p> Complete your style profile so that your personal Stylist can get to know you.
+                                                Your Stylist will hand-pick a package valued at an average of $80-250+* based
+                                                on your style and preferences.</p>
+                                            <h3>STEP TWO: PERSONAL STYLIST HAND-PICKS CLOTHES</h3>
+                                            <p>Your personal Stylist will select clothing based on the style profile you provide
+                                                us and our styling algorithm</p>
+                                            <h3>STEP THREE: RECEIVE YOUR NEW SWAG</h3>
+                                            <p>Now sit back and relax and let us hook you up with dope streetwear! Packages
+                                                are delivered monthly so that you always look fresh!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+    </section>
+
+
+
+
+    <!-- ****** Footer Menu Area Start ****** -->
+    <footer class="footer_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content">
+
+
+
+
+
+                        <!-- ****** Footer Menu Area End ****** -->
+
+                        <!-- Jquery-2.2.4 js -->
+                        <script src="js/jquery/jquery-2.2.4.min.js"></script>
+                        <!-- Popper js -->
+                        <script src="js/bootstrap/popper.min.js"></script>
+                        <!-- Bootstrap-4 js -->
+                        <script src="js/bootstrap/bootstrap.min.js"></script>
+                        <!-- All Plugins JS -->
+                        <script src="js/others/plugins.js"></script>
+                        <!-- Active JS -->
+                        <script src="js/active.js"></script>
+</body>

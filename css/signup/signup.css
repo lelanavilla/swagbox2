@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    max-width:100%;
+    
+    position:relative;
+
+}
+body{background-image:url("https://i.pinimg.com/originals/a7/f0/70/a7f0703459e2229799ff7912f919e02a.jpg");
+    
+    background-size:cover;
+    background-repeat:no-repeat;
+    max-width:100%;
+    z-index:-1;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    color: #232d37;
+    line-height: 1.25;
+}
+ul{
+    background-color:white;
+}
+
+li {
+    list-style: none;
+}
+/* Create 4 columns of equal width */
+.columns {
+    float: left;
+    width: 25%;
+    padding: 8px;
+   
+}
+
+
+/* Style the list */
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+    background-color:black;
+    color: white;
+    font-size: 25px;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+    background-color: red;
+    border: 1px black solid;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+.logo_area .yummy-logo {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 60px;
+    margin-bottom: 0;
+    padding: 35px 0 20px 0;
+    color:white;
+    text-align:center;
+    text-decoration: none;
+    
+}
+
+/* Change the width of the four columns to 100% 
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .logo_area .yummy-logo {
+        font-family: 'Shadows Into Light Two', cursive;
+        font-size: 30px;
+        margin-bottom: 0;
+        padding: 20px 0 10px 0;
+    }
+    .columns {
+       float:none;
+       width:100%;
+       padding-bottom:8px;
+
+        
+    }
+    .button{
+        width:inherit;
+        height:10px;
+        font-size:inherit;
+    }
+    ul{
+        color:black;
+        font-size:14px;
+        padding-bottom:15px;
+        text-align:center;
+    }
+    .price li{
+        font-size:inherit;
+        padding:5px;
+    }
+    .price .grey{
+        font-size:inherit;
+    }
+    .price .header{
+        font-size:inherit;
+    }
+
+   
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .columns {
+        float:none;
+        width:100%;
+        padding-bottom:15px;
+        position:relative;
+        color:rgb(3, 69, 69);
+
+        
+    }
+    .grey{
+        padding-top:10px;
+        position:relative;
+    }
+    .button{
+        width:inherit;
+        height:10px;
+        font-size:inherit;
+    }
+    ul{
+        text-align:center;
+        color:black;
+        font-size:14px;
+        padding-bottom:15px;
+    }
+    .price li{
+        font-size:inherit;
+        padding:10px;
+    }
+    .price .grey{
+        font-size:inherit;
+    }
+    .price .header{
+        font-size:inherit;
+    }
+
+   
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    
+    .columns {
+         float:none;
+         width:100%;
+         padding-bottom: 10px
+        
+    }
+    .grey{
+        padding-top:10px;
+        position:relative;
+    }
+    .button{
+        width:inherit;
+        height:4px;
+        font-size:8px;
+        
+    }
+    ul{
+        text-align:center;
+        color:black;
+        font-size:12px;
+        padding-bottom:15px;
+    }
+    .price li{
+        font-size:inherit;
+        padding:2px;
+    }
+    .price .grey{
+        font-size:inherit;
+    }
+    .price .header{
+        font-size:inherit;
+    }
+   
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+   
+    .columns {
+        float:none;
+        width:100%;
+        padding-bottom: 7px
+       
+   }
+   .grey{
+    padding-top:10px;
+    position:relative;
+}
+   .button{
+       width:inherit;
+       height:10px;
+       font-size:inherit;
+       margin-top:10px;
+   }
+   ul{
+       text-align:center;
+       color:black;
+       font-size:14px;
+       padding-bottom:15px;
+   }
+   .price li{
+       font-size:inherit;
+       padding:2px;
+   }
+   .price .grey{
+       font-size:inherit;
+   }
+   .price .header{
+       font-size:inherit;
+   }
+  
+}
+
+
+.signup-wrapper{
+    max-width:100%;
+    box-sizing:border-box;
+    position:relative;
+    
+}
+
+.signup-form-area{
+    display:grid;
+    max-width:100%;
+    width:70%;
+    margin-left:4%;
+    background-color:white;
+    line-height:.75;
+    border:3px solid darkblue;
+    
+    
+}
+h2, h3{
+    max-width:100%;
+    width:50%;
+    margin-left:2%;
+    background-color:white;
+    font-weight:700;
+    font-size:2vw;
+}
+#adult{
+    font-size:1.05vw;
+    color:red;
+    max-width:100%;
+    width:90%;
+}
+form{
+    display:block;
+    max-width:100%;
+    width:60%;
+    margin-bottom:5%;
+    
+}
+label{
+    max-width:100%;
+    margin-left:5%;
+    font-size:1.5vw;
+    margin-top:1%;
+}
+.label-input{
+    max-width:100%;
+    width:65%;
+    /* height:15%; */
+    margin-top:.65%;
+    margin-left:5%;
+    font-size:1.5vw;
+    border:1.5px solid black;
+
+}
+.sub-input{
+    max-width:100%;
+    width:95%;
+    height:10%;
+    margin-top:.65%;
+    margin-left:5%;
+    font-size:1.5vw;
+    border:1.5px solid black;
+}
+select{
+    max-width:100%;
+    width: 70%;
+    font-size:1.5vw;
+    margin-left:4%;
+    border:1.5px solid black;
+}
+p{
+    max-width:100%;
+    width:90%;
+    font-size:1.5vw;
+    margin-left:4%;
+
+}
+#sub-btn{
+    max-width:100%;
+    width:40%;
+    height:7%;
+    background-color:darkblue;
+    color:white;
+    font-size:1.75vw;
+    margin-left:90%;
+}
+#terms{
+    max-width:100%;
+    width:100%;
+    margin-left:10%;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Swagbox Style Profile Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <nav class="profile-nav">
+        <li>
+            <a href="index.html">HOME</a>
+        </li>
+        <h1 class="header" id="title"></h1>
+        <p id="description">TELL US ABOUT YOUR SWAG</p>
+        <section id="account-details">
+            <form data-netlify="true" method="POST" type="form" class="form" name="style-profile" id="survey-form" action="">
+
+                <div class="tab login">
+                    <br>
+                    <label id="username-label">Username</label>
+                    <p>
+                        <input type="text" id="username" required oninput="this.className = ''">
+                    </p>
+                    <br>
+                    <label id="password-label">Password</label>
+                    <p>
+                        <input type="text" id="password" required oninput="this.className = ''">
+                    </p>
+                    <p class="hint">PASSWORD MUST BE AT LEAST 6 CHARACTERS LONG</p>
+                    <br>
+                    <p>
+                        <input placeholder="First name" id="firstname" required oninput="this.className = ''">
+                    </p>
+                    <p>
+                        <input placeholder="Last name" id="lastname" required oninput="this.className = ''">
+                    </p>
+                    <p>
+                        <input placeholder="Age" oninput="this.className = ''">
+                    </p>
+                    <div class="tab contact-info">
+                        <p>
+                            <input placeholder="E-mail" id="age" type="email" required oninput="this.className = ''">
+                        </p>
+                        <p>
+                            <input placeholder="Phone" id="number" type="number" required oninput="this.className = ''">
+                        </p>
+                        <p>
+                            <input placeholder="Address" id="address" required oninput="this.className = ''">
+                        </p>
+
+
+                        <div class="tab location">
+                            <div class="about-title">ABOUT YOU</div>
+                            <br>
+                            <p>
+                                <input placeholder="Height" id="height" required oninput="this.className = ''">
+                            </p>
+                            <br>
+                            <p>
+                                <input placeholder="Weight" id="weight" required oninput="this.className = ''">
+                            </p>
+                            <br>
+                            <p>
+                                <input placeholder="Pant Size" id="pant-size" required oninput="this.className = ''">
+                            </p>
+                            <br>
+                            <p>
+                                <input placeholder="Shirt Size" id="shirt-size" required oninput="this.className = ''">
+                            </p>
+                            <br>
+                            <p>
+                                <input placeholder="Shoe Size" id="shoe-size" required oninput="this.className = ''">
+                            </p>
+
+                            <div class="tab date">
+                                <div class="about-title"> DESCRIBE YOUR STYLE</div>
+                                <br>
+                                <div id="img-styles">
+                                    <img class="style-images" src="https://i.pinimg.com/736x/11/c9/17/11c9171cabef5199c8ede35ef87d002e--skinny-jean-outfits-skinny-jeans.jpg"
+                                        alt="classic">
+
+                                    <img class="style-images" src="https://i.pinimg.com/736x/0e/67/00/0e67002ae41e0d406cce153e82b93388--teenage-boy-outfits-teenage-boy-fashion.jpg">
+                                    <img class="style-images" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDiKS0ePDePK0PDizncnpBfViokX61jZtpkrD7NnRj30fBgMAq">
+                                    <img class="style-images" src="https://i.pinimg.com/originals/a9/be/18/a9be180db01131469b27ffb4db5ff479.jpg">
+                                    <img class="style-images" src="https://images.champssports.com/is/image/EBFL2/42729011_om1_ven_sc7?hei=2000&wid=1500">
+                                    <img class="style-images" src="https://i.pinimg.com/564x/a5/e9/1f/a5e91f50ed05fbaee1f5d7b31329f2d2--teen-swag-swag-fashion.jpg"
+                                        id="greedy">
+
+                                </div>
+                                <p>Photos about are represented in the following list from left to right</p>
+                                <p>Pick your style(multiple choices ok):</p>
+                                <select multiple>
+                                    <option value="classic">Classic</option>
+                                    <option value="trendy">Trendy</option>
+                                    <option value="stylish">Stylish</option>
+                                    <option value="alternative">Alternative</option>
+                                    <option value="athletic">Athletic</option>
+                                    <option value="athletic">Urban</option>
+                                    <option value="athletic">None of these</option>
+
+                                </select>
+                                <p>What color shirts do you wear?</p>
+                                <select multiple>
+                                    <option value="neutral-colors">Neutral Colors Only</option>
+                                    <option value="any-color">Bright Colors</option>
+                                    <option value="any-color">Any Color</option>
+
+                                </select>
+                                <p>What types of shirts do you wear?</p>
+                                <select multiple>
+                                    <option value="regualr-tshirts">Regular Tshirts Only</option>
+                                    <option value="collared only">Collared Shirts Only</option>
+                                    <option value="both-types-tshirts">Both Kinds Of Shirts</option>
+                                </select>
+                                <br>
+                                <p>Is there a type / color you wont wear?</p>
+                                <input type="text" id="wont-wear" />
+                                <p id="jeans">How do you like to wear your jeans?(see guide below)</p>
+                                <input type="text" id="wont-wear"/>
+                                <div class="jeans">
+                                    <p class "jean-titles">Skinny
+                                        <input type="checkbox" value="skinny">
+                                    </p>
+                                    <img class="jean-pics" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC9lby6q1z2HIGGwM1r8Dky2Iv39GF96mFHPA28GcitmAXJSSFLg"
+                                        alt="skinny jeans" />
+                                    <p class "jean-titles">Straight-Leg
+                                        <input type="checkbox" value="straight-jeans">
+                                    </p>
+                                    <img class="jean-pics" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlv9PY5CpfycCctN6BOCIg3OIFDhnph_UWdLH6YmaD4L1gxeRb"
+                                        alt="straight-leg jeans" />
+                                    <p class "jean-titles">Relaxed
+                                        <input type="checkbox" value="relaxed-jeans">
+                                    </p>
+                                    <img class="jean-pics" src="https://cdn.shopify.com/s/files/1/1137/3592/products/AEABCEA3-C119-497C-9BBF-1EC8DDF1E4C3_1024x1024.jpeg?v=1512673396"
+                                        alt="relaxed jeans" />
+                                    <p class "jean-titles">Baggy
+                                        <input type="checkbox" value="baggy-jeans">
+                                    </p>
+                                    <img class="jean-pics" src="https://www.dhresource.com/0x0s/f2-albu-g3-M00-C5-B1-rBVaHVZWk9WAAP64AAeCAdca3iw801.jpg/wholesale-mens-baggy-jeans-male-embroidery.jpg"
+                                        alt="baggy jeans" />
+                                </div>
+                                <p>Enter any of your user names, so our stylists can see your style:
+                                </p>
+                                <div id="social-media">
+                                    <p>
+                                        <i class="fa fa-facebook-official" style="font-size:24px"></i>
+                                        <input placeholder="Facebook user name" oninput="this.className = ''">
+                                        <br>
+                                        <i class="fa fa-instagram" style="font-size:24px"></i>
+                                        <input placeholder="Instagram user name" oninput="this.className = ''">
+                                        <br>
+                                        <i class="fa fa-snapchat-square" style="font-size:24px"></i>
+                                        <input placeholder="Snapchat user name" oninput="this.className = ''">
+                                        <br>
+                                        <i class="fa fa-twitter-square" style="font-size:24px"></i>
+                                        <input placeholder="Twitter user name" oninput="this.className = ''">
+                                    </p>
+                                </div>
+                                <br>
+
+                                <p>Upload images of your style from your phone or computer here:</p>
+                                <form data-netlify="true" method="POST" id="uploads" name="image-uploads" type="file">
+                                    <br>
+                                    <p>Select images:</p>
+                                    <input type="file" id="select-img" name="img" multiple>
+                                    <br>
+                                    <input type="submit" id="submit-btn">
+                                    </p>
+                                    </form>
+                                    <br>
+                                    <p>Does your school have any dress-code restrictions? If so, what are they?</p>
+                                    <textarea placeholder="List restrictions here" oninput="this.className = ''"></textarea>
+                                    <br>
+                                    <br>
+
+                                    <button id="enter" type="submit">Enter</button>
+                                    <!-- <div class="tab" id="confirmation"> -->
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+</body>
+
+</html>
+
+
